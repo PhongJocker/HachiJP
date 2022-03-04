@@ -1,0 +1,23 @@
+<div id="container">
+    <div id="title-container">
+        <span id="serial">
+            {{ hoverMenuData[1].serial }}
+        </span>
+        <div id="title">
+            <span class="title">{{ hoverMenuData[1].title }}</span>
+            <span class="description">{{ hoverMenuData[1].description }}</span>
+        </div>
+        <div id="bg"></div>
+    </div>
+    <div id="content-container">
+        <div *ngFor="let item of pageTwoData" class="content">
+            <div id="title-content">
+                <span class="title-content">{{ item.title }}</span>
+                <img id="image" [src]="item.image" [alt]="'img' + pageTwoData.indexOf(item).toString()">
+            </div>
+            <div class="content-container">
+                <p id="content" *ngFor="let i of item.description.split('\n')">{{ i }}</p>
+            </div>
+        </div>
+    </div>
+</div>

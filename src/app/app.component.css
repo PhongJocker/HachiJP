@@ -1,0 +1,15 @@
+app-header {
+    width: var(--sc-width);
+    height: 100px;
+}
+
+app-page-one {
+    height: 900px;
+    background-color: white;
+}
+
+/* app-floating-menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+} */

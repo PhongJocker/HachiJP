@@ -1,0 +1,25 @@
+<div id="container">
+    <div id="title-container">
+        <span id="serial">
+            {{ hoverMenuData[6].serial }}
+        </span>
+        <div id="title">
+            <span>{{ hoverMenuData[6].title }}</span>
+            <span>{{ hoverMenuData[6].description }}</span>
+        </div>
+        <span>View all articles <img src="/assets/page-four/vector.svg" alt="rightVector"></span>
+    </div>
+    <div id="post-container">
+        <div id="post" *ngFor="let post of pageSevenPostData">
+            <img id="image" [src]="post.image" alt="image">
+            <span id="title">{{ post.title }}</span>
+            <span id="description">{{ post.description }}</span>
+        </div>
+    </div>
+</div>
+<div id="grid">
+    <div id="item" *ngFor="let item of pageSevenGridData">
+        <img [src]="item.image" alt="image">
+        <span id="title">{{ item.title }}</span>
+    </div>
+</div>

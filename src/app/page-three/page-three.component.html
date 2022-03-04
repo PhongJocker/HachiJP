@@ -1,0 +1,32 @@
+<div id="container">
+    <div id="title-container">
+        <span id="serial">
+            {{ hoverMenuData[2].serial }}
+        </span>
+        <div id="title">
+            <span class="title">{{ hoverMenuData[2].title }}</span>
+            <span class="description">{{ hoverMenuData[2].description }}</span>
+        </div>
+        <div id="bg"></div>
+    </div>
+    <div id="content-container">
+        <div id="leftContainer">
+            <div id="leftContent" *ngFor="let leftItem of pageThreeData.slice(0, haft)">
+                <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="3" cy="3" r="3" fill="#8DC63F"/>
+                </svg>
+                <span id="content-title">{{ leftItem.title }}</span>
+                <span id="content-description">{{ leftItem.description }}</span>
+            </div>
+        </div>
+        <div id="rightContainer">
+            <div id="rightContent" *ngFor="let rightItem of pageThreeData.slice(haft, len)">
+                <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="3" cy="3" r="3" fill="#8DC63F"/>
+                </svg>
+                <span id="content-title">{{ rightItem.title }}</span>
+                <span id="content-description">{{ rightItem.description }}</span>
+            </div>
+        </div>
+    </div>
+</div>

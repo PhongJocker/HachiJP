@@ -1,0 +1,55 @@
+* {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+}
+
+#container {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo {
+    margin: 22px 69px 31px 100px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    column-gap: 32px;
+}
+
+#content {
+    width: fit-content;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 3.1px;
+    color: #9DA19D;
+    vertical-align: middle;
+}
+
+#language-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 91.02px;
+    margin: 43px 99.98px 41px 69px;
+    column-gap: 5px;
+}
+
+#language {
+    border: none;
+    font-size: 13px;
+    letter-spacing: 3px;
+    line-height: 24.47px;
+}
+
+#flag {
+    width: 24px;
+    height: 16px;
+    margin-bottom: 12px;
+    margin-right: 5px;
+}

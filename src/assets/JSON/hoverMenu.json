@@ -1,0 +1,42 @@
+[
+    {
+      "serial": "01",
+      "title": "前書き",
+      "description": "Introduction"
+    },
+    {
+      "serial": "02",
+      "title": "企業理念",
+      "description": "Company Philosophy"
+    },
+    {
+      "serial": "03",
+      "title": "会社概要",
+      "description": "Company Info"
+    },
+    {
+      "serial": "04",
+      "title": "営業形態",
+      "description": "Our Business"
+    },
+    {
+      "serial": "05",
+      "title": "レビュー",
+      "description": "Customer Reviews"
+    },
+    {
+      "serial": "06",
+      "title": "店舗情報",
+      "description": "Store Location"
+    },
+    {
+      "serial": "07",
+      "title": "ニュース",
+      "description": "News & Media"
+    },
+    {
+      "serial": "08",
+      "title": "お問い合わせ",
+      "description": "Contact"
+    }
+  ]

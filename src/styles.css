@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --sc-width: 1440px;
+    --sc-height: 8027px;
+}
+
+app-root {
+    width: var(--sc-width);
+    height: var(--sc-height);
+    display: flex;
+    flex-direction: column;
+    background-color: #F9FAF9;
+}

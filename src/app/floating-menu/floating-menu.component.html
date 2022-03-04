@@ -1,0 +1,15 @@
+<img src="/assets/floating-menu/side-menu.svg" id="side-menu" alt="floatingMenu">
+<div class="hoverScroll">
+    <img src="/assets/floating-menu/scroll-top.svg" id="scroll-top" alt="scroll-top">
+    <img src="/assets/floating-menu/hover-scroll-top.svg" id="hover-scroll-top">
+</div>
+<div class="hoverMenu">
+    <img src="assets/header/logo-Hachi.svg" id="logo" alt="hachi-logo"/>
+    <div class="container" *ngFor="let object of hoverMenuData">
+        <div class="serial">{{ object.serial }}</div>
+        <div class="menu">
+            <span id="title">{{ object.title }}</span>
+            <span id="description">{{ object.description }}</span>
+        </div>
+    </div>
+</div>

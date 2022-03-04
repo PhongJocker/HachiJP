@@ -1,0 +1,43 @@
+<div id="container">
+    <div id="title-container">
+        <span id="serial">
+            {{ hoverMenuData[7].serial }}
+        </span>
+        <div id="title">
+            <span>{{ hoverMenuData[7].title }}</span>
+            <span>{{ hoverMenuData[7].description }}</span>
+        </div>
+    </div>
+    <div id="contact-container">
+        <span id="title">有限 会社 Viet Ha Chi</span>
+        <div id="pin">
+            <img src="/assets/page-six/pin.svg" alt="pinIcon">
+            <span>４0番号、１４番号通り、５街、ゴヴァップ区、ホーチミン市</span>
+        </div>
+        <div id="email">
+            <img src="/assets/page-eight/mail.svg" alt="mailIcon">
+            <span>info@hachihachi.com.vn</span>
+        </div>
+        <div id="pin">
+            <img src="/assets/page-six/phoneCall.svg" alt="phoneIcon">
+            <span>(028) 3820 6057</span>
+        </div>
+    </div>
+</div>
+<form>
+    <span id="formTitle"></span>
+    <div id="formDescription">
+        <span>お問い合わせについては、よくあるご質問をご参考ください。</span>
+        <span>返信についてお時間を頂く場合がございます。</span>
+    </div>
+    <div id="formInput">
+        <input type="text" name="name" id="name" placeholder="お名前">
+        <input type="email" name="email" id="email" placeholder="メールアドレス">
+        <input type="text" name="address" id="address" placeholder="ご住所 (Optional)">
+        <input type="text" name="phone" id="phone" placeholder="電話番号 (Optional)">
+        <select name="info" id="info">
+        </select>
+        <textarea name="message" id="message" placeholder="お問い合わ... "></textarea>
+    </div>
+    <div>送信内容を確認する</div>
+</form>
