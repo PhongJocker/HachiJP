@@ -13,7 +13,7 @@
         <div *ngFor="let item of pageTwoData" class="content">
             <div id="title-content">
                 <span class="title-content">{{ item.title }}</span>
-                <img id="image" [src]="item.image" [alt]="'img' + pageTwoData.indexOf(item).toString()">
+                <img id="image" src="/assets/page-two/{{item.image}}" [alt]="'img' + pageTwoData.indexOf(item).toString()">
             </div>
             <div class="content-container">
                 <p id="content" *ngFor="let i of item.description.split('\n')">{{ i }}</p>
