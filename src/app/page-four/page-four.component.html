@@ -3,11 +3,13 @@
         <span id="serial">
             {{ hoverMenuData[3].serial }}
         </span>
+
         <div id="title">
             <span class="title">{{ hoverMenuData[3].title }}</span>
             <span class="description">{{ hoverMenuData[3].description }}</span>
         </div>
     </div>
+
     <div id="content-container1">
         <div id="content1" *ngFor="let item of pageFourData">
             <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -17,37 +19,53 @@
         </div>
     </div>
 </div>
+
 <div id="lineBreak1">商品カテゴリ</div>
+
 <div id="slideShow">
     <div id="items">
         <span></span>
     </div>
 </div>
+
 <div id="container2">
     <img src="/assets/page-four/logo.svg" alt="hachi-logo">
+
     <div id="content-container2">
         <span>ベトナムのオンラインストア</span>
         <span>Vietnam Online Store</span>
     </div>
+
     <svg width="38" height="10" viewBox="0 0 38 10" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1 8.72732H36.909L29.6363 1.45459" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>        
 </div>
+
 <div id="container3">
     <div id="toggle-container">
         <span id="lineBreak2">日本ブランド</span>
+
         <div id="toggle">
-            <datalist id="dropdown">
-                <option value={{ item }} *ngFor="let item of pageFourData">{{ item }}</option>
-            </datalist>
+            <select id="dropdown">
+                <option [value]="item" *ngFor="let item of dropMenu">{{ item }}</option>
+            </select>
+
             <div id="pageShow">
-                <img id="leftVector" src="/assets/page-four/vector.svg" alt="leftVector">
-                <span id="pages">2 / 10 pages</span>
-                <img id="rightVector" src="/assets/page-four/vector.svg" alt="rightVector">
+                <div id="vector-container">
+                    <img id="vector" class="left" src="/assets/page-four/vector.svg" alt="leftVector">
+                </div>
+
+                <span id="pages"><b>2</b> / 10 pages</span>
+
+                <div id="vector-container">
+                    <img id="vector" class="right" src="/assets/page-four/vector.svg" alt="rightVector">
+                </div>
             </div>
         </div>
     </div>
-    <div id="logo-comapany">
-        <img src="" alt="" *ngFor="">
+
+    <div id="logo-container" *ngFor="let item of companiesLogoData" style="width: 246px; height: 180px; background-color: white;">
+        <img id="logo" src="/assets/page-four/companies/{{item.brandLogo}}" [alt]="item.brandName">
+        <span id="name">{{ item.brandName }}</span>
     </div>
 </div>
