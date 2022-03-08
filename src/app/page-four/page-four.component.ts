@@ -1,11 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import hoverMenuData from '../../assets/JSON/hoverMenu.json';
 import pageFourData from '../../assets/JSON/pageFour.json';
+import companiesLogoData from '../../assets/JSON/brandLogo.json';
 
 interface HoverMenuObject {
   serial: string,
   title: string,
   description: string,
+}
+
+interface logoObject {
+  brandName: string;
+  brandLogo: string;
 }
 
 @Component({
@@ -14,8 +20,10 @@ interface HoverMenuObject {
   styleUrls: ['./page-four.component.css']
 })
 export class PageFourComponent implements OnInit {
-  public hoverMenuData: HoverMenuObject[] = hoverMenuData;
   public pageFourData = pageFourData;
+  public dropMenu = ['アウトドア・旅行用品', 'アウトドア・旅行用品'];
+  public hoverMenuData: HoverMenuObject[] = hoverMenuData;
+  public companiesLogoData: logoObject[] = companiesLogoData;
 
   constructor() { }
 
